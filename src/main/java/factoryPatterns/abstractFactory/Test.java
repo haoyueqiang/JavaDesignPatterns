@@ -14,6 +14,19 @@ public class Test {
 		seat.message();
 		tyre.revolve();
 		
+		System.out.println("----------------------------------");
+		
+		//生产高端汽车
+		CarFactory factoryLuxury = new LuxuryCarFactory();
+		Engine engineLuxury = factoryLuxury.createEngine();
+		Seat seatLuxury = factoryLuxury.createSeat();
+		Tyre tyreLuxury = factoryLuxury.createTyre();
+		engineLuxury.run();
+		engineLuxury.start();
+		seatLuxury.message();
+		tyreLuxury.revolve();
+		
+		
 	}
 
 }
