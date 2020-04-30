@@ -17,4 +17,8 @@ public class DriverFactory {
 		}	
 	}
 	
+	public static void main(String[] args) {
+		System.out.println("aaa".equalsIgnoreCase("AAA"));
+	}
+	
 }
